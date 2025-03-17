@@ -1,7 +1,5 @@
 import pandas as pd
 import streamlit as st
-import matplotlib.pyplot as plt
-import numpy as np
 
 # Dosya yükleme
 uploaded_file = st.file_uploader("Bir .log dosyası yükleyin", type="log")
