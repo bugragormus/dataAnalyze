@@ -100,5 +100,6 @@ if uploaded_file is not None:
 
     # Veriyi indirilebilir hale getirme
     st.subheader("Veriyi İndir")
-    csv = filtered_df.to_csv(index=False)
+    csv = filtered_df.to_csv(index=False, encoding='utf-8-sig', sep=';')
     st.download_button(label="CSV Olarak İndir", data=csv, file_name="nem_verisi.csv", mime="text/csv")
+
