@@ -31,7 +31,6 @@ if uploaded_file is not None:
     avg_moisture = filtered_df['Nem'].mean()
     st.write(f"Seçilen tarih aralığında ortalama nem: {avg_moisture:.2f}")
 
-
     # Nem seviyelerini kategorilere ayırma
     def categorize_moisture(value):
         if value < 5:
@@ -40,7 +39,6 @@ if uploaded_file is not None:
             return 'Normal Akış'
         else:
             return 'Yüksek Akış'
-
 
     filtered_df['Akış Durumu'] = filtered_df['Nem'].apply(categorize_moisture)
 
@@ -98,8 +96,10 @@ if uploaded_file is not None:
     st.write(f"Ortalama Nem: {filtered_df['Nem'].mean():.2f}")
     st.write(f"Standart Sapma: {filtered_df['Nem'].std():.2f}")
 
+    # Nem sütunundaki sayıları Excel'in tarih formatına çevirmesini önlemek için biçimlendiriyoruz:
+    filtered_df['Nem'] = filtered_df['Nem'].apply(lambda x: format(x, '.2f').replace('.', ','))
+
     # Veriyi indirilebilir hale getirme
     st.subheader("Veriyi İndir")
     csv = filtered_df.to_csv(index=False, encoding='utf-8-sig', sep=';')
     st.download_button(label="CSV Olarak İndir", data=csv, file_name="nem_verisi.csv", mime="text/csv")
-
