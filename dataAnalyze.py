@@ -99,6 +99,6 @@ if uploaded_file is not None:
     st.write(f"Standart Sapma: {filtered_df['Nem'].std():.2f}")
 
     # Veriyi indirilebilir hale getirme
-    #st.subheader("Veriyi İndir")
-    #csv = filtered_df.to_csv(index=False)
-    #st.download_button(label="CSV Olarak İndir", data=csv, file_name="nem_verisi.csv", mime="text/csv")
+    st.subheader("Veriyi İndir")
+    csv = filtered_df.to_csv(index=False)
+    st.download_button(label="CSV Olarak İndir", data=csv, file_name="nem_verisi.csv", mime="text/csv")
