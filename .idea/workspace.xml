@@ -7,6 +7,7 @@
     <list default="true" id="b0742f28-96d2-463c-ad74-0ca85b38b36f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataAnalyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataAnalyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,10 @@
       <workItem from="1742215900178" duration="337000" />
       <workItem from="1742216512002" duration="180000" />
       <workItem from="1742364793757" duration="827000" />
-      <workItem from="1742392847305" duration="828000" />
+      <workItem from="1742392847305" duration="989000" />
+      <workItem from="1742447745757" duration="4395000" />
+      <workItem from="1742557441059" duration="10000" />
+      <workItem from="1743170440417" duration="89000" />
     </task>
     <servers />
   </component>
